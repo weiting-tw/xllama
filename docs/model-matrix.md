@@ -455,6 +455,18 @@ closed kills (do not re-argue): diffusion **image** SD-Turbo remains product;
 diffusion **text** WS-D closed; ORT DML int4 text reject; speculative default
 FAIL (opt-in only).
 
+## J. Decision models (System One, host feasibility)
+
+Typed-decision models return calibrated probabilities over supplied options in
+one forward pass; they do not generate text. None is catalogued. Dated note:
+[laya-feasibility.md](laya-feasibility.md).
+
+| Candidate                               | Status                    | Reason                                                                                                                                                       |
+| --------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Laya multilingual (mmBERT-base, 322M)   | host-smoke (2026-11-01)   | C++ parity on the pin (llama.cpp modern-bert encoder + head; tokenizer 20/20 exact); Q8_0 341 MB, 486 MB host peak, Δp 0.022. No head in C++, no console run |
+| Laya English (ModernBERT-large, 421M)   | host-smoke (2026-11-01)   | Same parity at F32; 8-bit hurts calibration (ORT int8 Δp 0.35–0.44, Q8_0 0.047)                                                                              |
+| Kev-9B / Kev-27B (Qwen3.5/3.8 backbone) | reject for console — desk | Smallest GGUF ~4.8 GB, above the measured heap ceiling (§A3); the pin's llama-server serves /v1/systemone on a host                                          |
+
 ---
 
 ## See also

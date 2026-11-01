@@ -106,7 +106,8 @@ path checklist for discovery — descriptions are not repeated.
 
 **Research:** [`../paper/`](../paper/) (current citable report, provenance and release runbook) ·
 [technical-report.md](technical-report.md) (frozen July 2026 historical snapshot) ·
-[floppylm.md](./floppylm.md) (not an xllama engine; closed here 2026-10-01)
+[floppylm.md](./floppylm.md) (not an xllama engine; closed here 2026-10-01) ·
+[laya-feasibility.md](./laya-feasibility.md) (decision-model host feasibility, 2026-11-01)
 
 ### Acceptable headline vs SSOT
 

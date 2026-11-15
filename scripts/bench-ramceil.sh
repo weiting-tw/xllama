@@ -61,6 +61,8 @@ PFN=$("${DEPLOY}" pfn 2>/dev/null)
 }
 
 TMPDIR_LOCAL=$(mktemp -d)
+# Git Bash on Windows: curl.exe cannot write to the MSYS /tmp path (rc 26).
+command -v cygpath >/dev/null 2>&1 && TMPDIR_LOCAL=$(cygpath -m "$TMPDIR_LOCAL")
 trap 'rm -rf "$TMPDIR_LOCAL"' EXIT
 
 upload() {

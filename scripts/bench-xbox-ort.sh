@@ -259,6 +259,8 @@ echo "  PFN: $PFN"
 # Helpers
 # ---------------------------------------------------------------------------
 TMPDIR_LOCAL=$(mktemp -d)
+# Git Bash on Windows: curl.exe cannot write to the MSYS /tmp path (rc 26).
+command -v cygpath >/dev/null 2>&1 && TMPDIR_LOCAL=$(cygpath -m "$TMPDIR_LOCAL")
 CONFIG_SWAPPED="" # set when --threads overwrites the device genai_config.json
 MODEL_TXT_ORIG="" # "saved" or "absent" once the device model.txt was backed up
 

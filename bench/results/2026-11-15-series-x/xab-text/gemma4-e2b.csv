@@ -1,0 +1,4 @@
+model,quant,backend,n_ctx,n_threads,prompt_tok_s,decode_tok_s,peak_ws_mb,load_ms,gpu_mem_mb,gpu_budget_mb,n_prompt_tok,n_gen_tok,max_length,host,date,run_index,prefill_ms,ttft_ms
+gemma4-e2b,Q3_K_S,cpu,2048,6,54.58,16.83,2731,8186,0,0,280,30,0,xbox-series-x-declared-t6,2026-11-15T13:53:41Z,2,5130.1,5131.7
+gemma4-e2b,Q3_K_S,cpu,2048,6,54.51,16.19,2731,8192,0,0,280,240,0,xbox-series-x-declared-t6,2026-11-15T13:54:20Z,3,5137.0,5138.7
+gemma4-e2b,Q3_K_S,cpu,2048,6,54.49,15.94,2731,8180,0,0,280,512,0,xbox-series-x-declared-t6,2026-11-15T13:55:14Z,4,5139.0,5140.6

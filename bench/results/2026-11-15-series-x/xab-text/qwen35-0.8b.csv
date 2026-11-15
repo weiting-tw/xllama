@@ -1,0 +1,4 @@
+model,quant,backend,n_ctx,n_threads,prompt_tok_s,decode_tok_s,peak_ws_mb,load_ms,gpu_mem_mb,gpu_budget_mb,n_prompt_tok,n_gen_tok,max_length,host,date,run_index,prefill_ms,ttft_ms
+qwen35-0.8b,Q4_K_M,cpu,2048,6,185.35,36.14,715,2407,0,0,298,492,0,xbox-series-x-declared-t6,2026-11-15T13:43:23Z,2,1607.8,1609.3
+qwen35-0.8b,Q4_K_M,cpu,2048,6,186.28,36.64,715,2392,0,0,298,385,0,xbox-series-x-declared-t6,2026-11-15T13:43:45Z,3,1599.8,1601.3
+qwen35-0.8b,Q4_K_M,cpu,2048,6,185.17,36.43,715,2405,0,0,298,402,0,xbox-series-x-declared-t6,2026-11-15T13:44:12Z,4,1609.3,1610.8

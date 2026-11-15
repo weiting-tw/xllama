@@ -432,7 +432,7 @@ Closed negative: DML int4 decode, 1B fp16 DML inference, llama≫ORT BW, AppCont
 ### H8 — Series X GPU budget for 1B fp16 DML
 
 - **Claim:** Higher Game budget avoids 8007000E on 1B fp16 inference.
-- **Status:** Not yet tested (needs a Series X console; none available). Opportunistic if one becomes available. **#91 allowlist applies**
+- **Status:** Not yet tested. A Series X became available on 2026-11-15: its Game GPU budget measured 4147 MB ([series-x.md](./series-x.md#memory-app-vs-game-designation)), but no 1B fp16 DirectML asset was run. **#91 allowlist applies**
   (`dml_text_model_ok`): even a passing H8 asset must decompose RMSNorm and
   prove logit parity on **that** DML asset before joining the allowlist — do
   **not** run bare `validate-logit-parity.sh` (default

@@ -1,0 +1,104 @@
+{
+  "campaign": "2026-11-15-series-x",
+  "package": {
+    "file": "xllama_1.7.0.1495_x64.msix",
+    "source": "GitHub release v1.7.0.0 (sideloaded with its test certificate)",
+    "sha256": "6ec4cb59e5ad030e4e472ae296f5d1d89ee76f75673112b19ab91445cdb33cfb",
+    "package_full_name": "GianlucaMazza.xllama_1.7.0.1495_x64__pj67f1fcj4n14"
+  },
+  "device": "see device-receipt.json (Device Portal /api/os/info: Platform \"Xbox Series X\")",
+  "app_designation": "Game (Dev Home), confirmed by the ramceil probe (GPU budget 4147 MB)",
+  "harness_commit_base": "upstream main 436da0556cff7cc9850ad5135070002e351f4c03 plus the Git Bash path fix in this change",
+  "prompt": {
+    "path": "bench/prompts/standard-512.txt",
+    "sha256": "04a493cf192bf700905194c75af9f45838cc18ab92c0a65bb5ddc28ed7d51c70",
+    "n_prompt_tok": 298
+  },
+  "settings": {
+    "threads": 6,
+    "n_ctx": 2048,
+    "n_predict": "512 (to EOG)",
+    "runs": "4, run 1 discarded",
+    "d3d12_gpu_layers": 99
+  },
+  "models_from_bundled_catalogue": {
+    "note": "downloaded with /api/pull, which verifies each file against the package's bundled models/manifest.json",
+    "files": {
+      "qwen35-0.8b": [
+        {
+          "filename": "Qwen3.5-0.8B-Q4_K_M.gguf",
+          "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+          "approx_bytes": 532517120
+        }
+      ],
+      "gemma4-e2b": [
+        {
+          "filename": "gemma-4-E2B-it-Q3_K_S.gguf",
+          "sha256": "80d155f647d3a896669b1d1605b494b97ee9dbd1dcafd27957394134c280d270",
+          "approx_bytes": 2445652064
+        }
+      ],
+      "lfm25-350m": [
+        {
+          "filename": "LFM2.5-350M-QAD-Q4_0.gguf",
+          "sha256": "3d10b6ab8fc91a919534b9558e266255aca0bbc7f6d015963599aa9e74e05b1d",
+          "approx_bytes": 219312832
+        }
+      ],
+      "lfm25-1.2b-instruct": [
+        {
+          "filename": "LFM2.5-1.2B-Instruct-QAD-Q4_0.gguf",
+          "sha256": "bb741ebb106d543e9de114b843a3d3d73d51c74b5801e69da2abde821a0cb3e1",
+          "approx_bytes": 695755488
+        }
+      ],
+      "lfm2-2.6b": [
+        {
+          "filename": "LFM2-2.6B-Q4_K_M.gguf",
+          "sha256": "384bc877b6c37064982f96885bef69e4475919f5969218ed4e3b9399ae0340df",
+          "approx_bytes": 1563668704
+        }
+      ],
+      "llama32-3b": [
+        {
+          "filename": "Llama-3.2-3B-Instruct-Q3_K_S.gguf",
+          "sha256": "81bd392ed38532d17f8be3942ec3237747ccc9d91365e6cc31e060be3f0edac8",
+          "approx_bytes": 1542848960
+        }
+      ],
+      "phi4-mini": [
+        {
+          "filename": "Phi-4-mini-instruct-Q4_K_M.gguf",
+          "sha256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a",
+          "approx_bytes": 2491874272
+        }
+      ],
+      "qwen3-1.7b": [
+        {
+          "filename": "Qwen3-1.7B-Q4_K_M.gguf",
+          "sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+          "approx_bytes": 1107409472
+        }
+      ],
+      "lfm25-8b-a1b": [
+        {
+          "filename": "LFM2.5-8B-A1B-UD-IQ3_S.gguf",
+          "sha256": "4a3c682957fa64e4361f651d6a157caaf8f2447bff64167eee0d258c0c937ef4",
+          "approx_bytes": 3570921056
+        }
+      ]
+    }
+  },
+  "decider_gguf": {
+    "file": "pplx-decider-flash-v1.3-Q5_K_M.gguf (flash-v1.3-Q5_K_M after scripts/decider/set_noncausal.py)",
+    "sha256": "dca6c4bd68d189b983dcd4f4d5680c13bef4d22674a308821d75abd8ed149263",
+    "source_checkpoint": "perplexity-ai/pplx-decider-flash-v1.3 revision d06fb3f2d97e0a52325a0d463c450cf0338f44fe",
+    "quantizer": "llama-quantize build 11146 (7fe450e19)"
+  },
+  "not_run": [
+    "scripts/validate-console.sh all",
+    "scripts/validate-api.sh all",
+    "power and thermal capture",
+    "benchmark sidecars"
+  ]
+}

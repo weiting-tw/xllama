@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "profile": "series-x-devmode",
+  "hardware": "xbox-series-x",
+  "hardware_identity_source": "operator-declared",
+  "hardware_observed": false,
+  "workloads": [
+    "text"
+  ],
+  "models": [
+    "lfm25-350m",
+    "qwen35-0.8b",
+    "lfm25-1.2b-instruct",
+    "qwen3-1.7b",
+    "lfm2-2.6b",
+    "llama32-3b",
+    "gemma4-e2b",
+    "phi4-mini",
+    "lfm25-8b-a1b"
+  ],
+  "prompt": "bench/prompts/standard-512.txt",
+  "runs_requested": 4,
+  "raw_results": "one CSV per model",
+  "sidecars": "required before publishing a headline claim"
+}

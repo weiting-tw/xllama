@@ -1,0 +1,15 @@
+{
+  "models": [
+    {
+      "_comment": "pplx-decider-flash-v1.3 Q5_K_M, non-causal + MTP-free metadata (set_noncausal.py). Served via /api/embed for an on-console feasibility test; readout is applied by the client.",
+      "name": "pplx-decider-q5",
+      "display": "pplx-decider flash v1.3 Q5_K_M (decision test)",
+      "kind": "gguf",
+      "role": "embedding",
+      "n_ctx": 4096,
+      "files": [
+        { "filename": "pplx-decider-flash-v1.3-Q5_K_M.gguf", "approx_bytes": 3074986400 }
+      ]
+    }
+  ]
+}

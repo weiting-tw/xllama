@@ -7,6 +7,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+- **Series X campaign with a device receipt:** an independent run on a
+  Series X in [docs/series-x.md](docs/series-x.md) covers what the accepted
+  field report did not: App vs Game memory ceilings, nine catalogue GGUF
+  models on the CPU, the d3d12 path for two, and `/api/embed` through a
+  pplx-decider decision-model test (tooling in `scripts/decider/`). It does
+  not complete the acceptance protocol. The console scripts now also run
+  from Git Bash on Windows: upload and temp paths go through `cygpath -m`
+  when it exists.
+
 - **GPU control on LFM2.5-1.2B: PASS.** The model that runs on the GPU by
   default went through the amended ADR 0010 control on the Series S. All 160
   captured Q4_0 products are within 1.7e-14 NMSE of an exact reference, and

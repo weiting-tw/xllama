@@ -1,0 +1,7 @@
+committed_mb,working_set_mb,avail_phys_mb,gpu_budget_mb,gpu_current_mb,ok,host,date
+128,157,767,1209,0,1,xbox-series-s,2026-11-14T17:13:51Z
+256,286,646,1209,0,1,xbox-series-s,2026-11-14T17:13:51Z
+384,414,513,1209,0,1,xbox-series-s,2026-11-14T17:13:51Z
+512,542,390,1209,0,1,xbox-series-s,2026-11-14T17:13:52Z
+640,670,258,1209,0,1,xbox-series-s,2026-11-14T17:13:52Z
+768,798,133,1209,0,1,xbox-series-s,2026-11-14T17:13:52Z

@@ -9,6 +9,10 @@ wdp_upload_file_request() {
 		echo "Error: WDP upload source does not exist" >&2
 		return 1
 	fi
+	# Git Bash on Windows: curl.exe cannot open an MSYS path (/e/...) in -F (rc 26).
+	if command -v cygpath >/dev/null 2>&1; then
+		local_path=$(cygpath -m "$local_path")
+	fi
 	form_entry="${local_path};type=application/octet-stream"
 	[[ -z "$filename" ]] || form_entry="${local_path};filename=${filename};type=application/octet-stream"
 	# Never turn a curl failure into the empty-body success used by older WDP.
